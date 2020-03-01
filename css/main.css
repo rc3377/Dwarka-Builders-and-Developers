@@ -1945,13 +1945,13 @@ h4, h5, h6 {
 }
 
 .p1-gradient-bg, .primary-btn, .primary-btn:after, .primary-btn2.primary-border:hover, .onoffswitch3-active .onoffswitch3-switch, .onoffswitch3-inactive .onoffswitch3-switch, .single-service:hover, .property-area .overlay-bg, .images span, .content .content-overlay, .single-footer-widget .click-btn {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f40f68), to(#fbcd08));
-  background-image: linear-gradient(90deg, #f40f68 0%, #fbcd08 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1bff67), to(#007f9f));
+  background-image: linear-gradient(90deg, #1bff67 0%, #007f9f 100%);
 }
 
 .p1-gradient-color, .about-left h4, .footer-social a:hover i, .single-footer-widget .bb-btn {
-  background: -webkit-gradient(linear, left top, right top, from(#f40f68), to(#fbcd08));
-  background: linear-gradient(90deg, #f40f68 0%, #fbcd08 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1bff67), to(#007f9f));
+  background: linear-gradient(90deg, #1bff67 0%, #007f9f 100%);
   background-clip: text;
   text-fill-color: transparent;
 }
@@ -2094,8 +2094,9 @@ h4, h5, h6 {
 .default-header {
   background-color: #fff;
   width: 100% !important;
-  -webkit-box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-          box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  -webkit-box-shadow: -21.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -21.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .menutop-wrap {
@@ -2142,9 +2143,10 @@ text-transform:uppercase .menutop-wrap .menu-top .list li:hover a {
 }
 
 .banner-area {
-  background: url(../img/header-bg.jpg) no-repeat center center/cover;
-  -webkit-transform: translateZ(100px);
-          transform: translateZ(100px);
+  background: url(../img/header-bg.jpg) fixed no-repeat center center/cover;
+  -webkit-transform: translate3d(0px, 0px, 500px);
+          transform: translate3d(0px, 0px, 500px);
+  z-index: -1;
 }
 
 .banner-content {
@@ -2334,6 +2336,11 @@ text-transform:uppercase .menutop-wrap .menu-top .list li:hover a {
   .fullscreen {
     height: 100% !important;
   }
+}
+
+.service-area {
+  -webkit-box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .service-area .header-text {

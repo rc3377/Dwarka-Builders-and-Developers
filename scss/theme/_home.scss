@@ -149,7 +149,8 @@
 .default-header{
 	background-color:#fff;
 	width: 100% !important;
-	box-shadow: -21.213px 21.213px 30px 0px rgba(158,158,158,0.3);	
+	box-shadow: -21.213px 21.213px 30px 0px rgba(0,0,0,0.3);	
+	z-index: 1;
 }
 
 .menutop-wrap{
@@ -188,8 +189,9 @@
 }
 
 .banner-area {
-	background:url(../img/header-bg.jpg) no-repeat center center/cover;
-	transform: translateZ(100px);
+	background:url(../img/header-bg.jpg) fixed no-repeat center center/cover;
+	transform: translate3d( 0px, 0px, 500px);
+	z-index: -1;
 }
 .banner-content {
 	text-align:center;
@@ -349,6 +351,7 @@
 //--------- Start service Area -------------//
 
 .service-area{
+	box-shadow: 0px -10px 30px rgba(0,0,0,0.4);
 	.header-text{
 		text-align:center;
 		h1{

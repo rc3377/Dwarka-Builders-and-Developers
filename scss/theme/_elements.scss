@@ -93,11 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 		border-radius: 20px;
 	}
 	&.arrow {
-		display: inline-box;
-		display: inline-flexbox;
 		display: inline-flex;
-		box-align: center;
-		flex-align: center;
 		align-items: center;
 		span {
 			margin-left: 10px;

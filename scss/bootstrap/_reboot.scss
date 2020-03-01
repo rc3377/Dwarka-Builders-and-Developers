@@ -24,8 +24,8 @@ html {
   line-height: 1.15; // 3
   text-size-adjust: 100%; // 4
   text-size-adjust: 100%; // 4
-  overflow-style: scrollbar; // 5
-  tap-highlight-color: rgba(0,0,0,0); // 6
+  -webkit-overflow-style: scrollbar; // 5
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // 6
 }
 
 *,

@@ -2144,6 +2144,7 @@ text-transform:uppercase .menutop-wrap .menu-top .list li:hover a {
 
 .banner-area {
   background: url(../img/header-bg.jpg) fixed no-repeat center center/cover;
+  height: 100vh;
   -webkit-transform: translate3d(0px, 0px, 500px);
           transform: translate3d(0px, 0px, 500px);
   z-index: -1;

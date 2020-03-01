@@ -190,6 +190,7 @@
 
 .banner-area {
 	background:url(../img/header-bg.jpg) fixed no-repeat center center/cover;
+	height: 100vh;
 	transform: translate3d( 0px, 0px, 500px);
 	z-index: -1;
 }

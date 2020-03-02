@@ -193,8 +193,8 @@ a {
 }
 
 .contactus {
-	transform: translate(-50%,0);
 	width: 100%;
+	justify-content: center;
 	& > div :hover {
 		transition: all 0.3s ease 0s;
 		font-size: larger;
@@ -203,7 +203,7 @@ a {
 	}
 	* {
 		text-align: center;
-		width: 40vw;
+		width: 40;
 	}
 }
 

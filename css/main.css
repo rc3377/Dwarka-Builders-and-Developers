@@ -2147,9 +2147,10 @@ a {
 }
 
 .contactus {
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contactus > div :hover {
@@ -2162,7 +2163,7 @@ a {
 
 .contactus * {
   text-align: center;
-  width: 40vw;
+  width: 40;
 }
 
 .h0 {

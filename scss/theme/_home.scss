@@ -188,6 +188,36 @@
 	height:34px !important;
 }
 
+a {
+	color: #777777;
+}
+
+.contactus {
+	transform: translate(-50%,0);
+	width: 100%;
+	& > div :hover {
+		transition: all 0.3s ease 0s;
+		font-size: larger;
+		font-weight: bold;
+		color: black;
+	}
+	* {
+		text-align: center;
+		width: 40vw;
+	}
+}
+
+.h0 {
+	color: whitesmoke;
+	font-size: 60px;
+	line-height: 1.625;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	display: block;
+	background-color: rgba(0,0,0,0.4);
+}
+
 .banner-area {
 	background:url(../img/header-bg.jpg) fixed no-repeat center center/cover;
 	height: 100vh;

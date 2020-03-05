@@ -195,15 +195,26 @@ a {
 .contactus {
 	width: 100%;
 	justify-content: center;
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	* {
+		text-align: center;
+		width: 100%;
+	}
 	& > div :hover {
 		transition: all 0.3s ease 0s;
 		font-size: larger;
 		font-weight: bold;
 		color: black;
 	}
-	* {
-		text-align: center;
-		width: 40;
+	& > h4 {
+		margin-bottom: 20px;
+		background-color: rgb(255, 196, 0.2);
+		border-radius: 999px;
+		padding:10px;
 	}
 }
 
@@ -245,7 +256,7 @@ a {
 .banner-content {
 	text-align:center;
 	h1 {
-		color:$white;
+		color: $white;
 		font-size: 48px;
 		font-weight: 700;
 		line-height: 1.15em;

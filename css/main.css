@@ -2151,6 +2151,24 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactus * {
+  text-align: center;
+  width: 100%;
 }
 
 .contactus > div :hover {
@@ -2161,9 +2179,11 @@ a {
   color: black;
 }
 
-.contactus * {
-  text-align: center;
-  width: 40;
+.contactus > h4 {
+  margin-bottom: 20px;
+  background-color: #ffc400;
+  border-radius: 999px;
+  padding: 10px;
 }
 
 .h0 {

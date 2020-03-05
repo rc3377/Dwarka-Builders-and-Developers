@@ -75,7 +75,7 @@
 		<!-- End banner Area -->
 
 		<!-- Start service Area -->
-		<section class="service-area section-gap" id="service">
+		<section class="service-area section-gap" style="background-color: #dbdbdb;" id="service">
 			<div class="container">
 				<div class="row d-flex justify-content-center">
 					<div class="col-md-8 pb-40 header-text">
@@ -140,7 +140,7 @@
 		<!-- End service Area -->
 
 		<!-- Start city Area -->
-		<section class="city-area section-gap">
+		<section class="city-area contact-area section-gap">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-md-4 mb-10">
@@ -230,60 +230,50 @@
 		<!-- End About Area -->
 
 		<!-- Start Contact Area -->
-		<section class="fixed-in-bg contact-area " id="contact">
-			<div class="container-fluid">
-				<div class="row align-items-center d-flex justify-content-start">
-					<div class="col-lg-6 col-md-12 contact-left no-padding" style=" width:100%; height: 100vh;">
-						<div style=" width:100vw; height: 100vh;">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28981.15489487356!2d73.08662411266988!3d17.859309151528866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be9c7e1c90c2ac9%3A0xdee3b4f2f2d6d9a2!2sDwarka%20Bbuilders%20and%20Developers%20Property!5e1!3m2!1sen!2sin!4v1583134253850!5m2!1sen!2sin"
-								style="width: 100%; height: 100%" frameborder="0" style="border:0;" allowfullscreen="">
-								<!-- width="600" height="450" -->
-							</iframe>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="bg-map" style="width: 100vw;height: calc(100vh - 56px);position: fixed;top: 56px;z-index: -2;">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28981.15489487356!2d73.08662411266988!3d17.859309151528866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be9c7e1c90c2ac9%3A0xdee3b4f2f2d6d9a2!2sDwarka%20Bbuilders%20and%20Developers%20Property!5e1!3m2!1sen!2sin!4v1583134253850!5m2!1sen!2sin"
+				style="width: 100%; height: 100%" frameborder="0" style="border:0;" allowfullscreen="">
+				<!-- width="600" height="450" -->
+			</iframe>
+		</div>
+		<section class="map-window" style="background: transparent;pointer-events: none;height: 120vh;" id="contact">
+			<!-- <div class="spacer" style="width: 100%;height: 100vh;background: transparent;pointer-events: ;"></div> -->
+
 		</section>
 		<!-- End Contact Area -->
 
 		<!-- Start contact-info Area -->
-		<section class="contact-info-area" style="padding: 100px;">
-			<div class="container">
-				<div class="row" style="
-				flex-wrap: nowrap;
-				justify-content: center;">
-					<div class="contactus single-info col-lg-3 col-md-6">
-						<h4 style="background-color: rgb(255, 196, 0.2);border-radius: 999px; padding:10px" >Contact us</h4>
-						<div>
-							<a href="tel:+919404244678">
-								+91-9404-244-678
-							</a>
-						</div>
-						<div>
-							<a href="tel:+917721999614">
-								+91-7721-999-614
-							</a>
-						</div>
-						<div>
-							<a href="mailto:chavanmangesh3377@gmail.com">
-								chavanmangesh3377@gmail.com
-							</a>
-						</div>
-						<div>
-							<a href="mailto:mangesh3377@yahoo.co.in">
-								mangesh3377@yahoo.co.in
-							</a>
-						</div>
-					</div>
+		<section class="contact-info-area contact-area" style="padding: 100px;">
+			<div class="contactus container">
+				<h4>Contact us</h4>
+				<div>
+					<a href="tel:+919404244678">
+						+91-9404-244-678
+					</a>
+				</div>
+				<div>
+					<a href="tel:+917721999614">
+						+91-7721-999-614
+					</a>
+				</div>
+				<div>
+					<a href="mailto:chavanmangesh3377@gmail.com">
+						chavanmangesh3377@gmail.com
+					</a>
+				</div>
+				<div>
+					<a href="mailto:mangesh3377@yahoo.co.in">
+						mangesh3377@yahoo.co.in
+					</a>
 				</div>
 			</div>
 		</section>
 		<!-- End contact-info Area -->
 
 		<!-- start footer Area -->
-		<footer class="footer-area section-gap">
-			<div class="container">
+		<footer class="footer-area" style="height: calc(100vh - 410px);padding:20px">
+			<div class="container" style="height: 100%;">
 				<div class="row">
 					<div class="col-lg-3  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
@@ -295,16 +285,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<p class="footer-text m-0">Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a></p>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</div>
+
 			</div>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			<p class="m-0" style="height:fit-content;position:relative;bottom:3px;text-align:right;font-size:8px;">
+				Copyright ©
+				2020 All rights reserved
+				| This template
+				is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+					target="_blank">Colorlib</a></p>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 		</footer>
+
 		<!-- End footer Area -->
 
 		<script src="js/vendor/jquery-2.2.4.min.js"></script>

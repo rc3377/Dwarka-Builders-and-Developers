@@ -251,7 +251,6 @@ a {
 	background:url(../img/header-bg.jpg) fixed no-repeat center center/cover;
 	height: 100vh;
 	transform: translate3d( 0px, 0px, 500px);
-	z-index: -1;
 }
 .banner-content {
 	text-align:center;
@@ -272,6 +271,22 @@ a {
 			font-size: 28px;
 			margin-top: 70px;	
 		}
+	}
+}
+body > * {
+	pointer-events: all;
+}
+.map-window {
+	background: transparent;
+	height: 120vh;
+	pointer-events: none;
+	& > * {
+		width: 100vw;
+		height: calc(100vh - 56px);
+		position: fixed;
+		pointer-events: all;
+		top: 56px;
+		z-index: -1;
 	}
 }
 

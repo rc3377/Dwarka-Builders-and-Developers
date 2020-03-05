@@ -2202,7 +2202,6 @@ a {
   height: 100vh;
   -webkit-transform: translate3d(0px, 0px, 500px);
           transform: translate3d(0px, 0px, 500px);
-  z-index: -1;
 }
 
 .banner-content {
@@ -2234,6 +2233,25 @@ a {
     font-size: 28px;
     margin-top: 70px;
   }
+}
+
+body > * {
+  pointer-events: all;
+}
+
+.map-window {
+  background: transparent;
+  height: 120vh;
+  pointer-events: none;
+}
+
+.map-window > * {
+  width: 100vw;
+  height: calc(100vh - 56px);
+  position: fixed;
+  pointer-events: all;
+  top: 56px;
+  z-index: -1;
 }
 
 .search-field {
